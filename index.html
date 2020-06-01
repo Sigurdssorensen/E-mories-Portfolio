@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sigurd Soerensen</title>
+  <!-- source these -->
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- end reference -->
+  <script src="./js/app.js" defer></script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div hidden id="nav-overlay">
+    </div>
+    <section>
+      <div id="toggle-nav" onclick="toggleNavbar()">
+        <i id="hamburger" class="material-icons">menu</i>
+      </div>
+      <div onclick="scrollToSection('#home')">
+        <h5 id="logo">E-mories</h5>
+      </div>
+    </section>
+    <section id="expanded-nav">
+      <ul>
+        <li class="nav-item" onclick="scrollToSection('#prototype-page')">Prototype</li>
+        <li class="nav-item" onclick="scrollToSection('#process-page')">My Process</li>
+        <li class="nav-item" onclick="scrollToSection('#ideal-product-page')">Ideal Product</li>
+        <li class="nav-item" onclick="scrollToSection('#technical-details-page')">Technical</li>
+        <li class="nav-item" onclick="scrollToSection('#outcome-reflection-page')">Reflection</li>
+      </ul>
+    </section>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="home">
+    <section>
+      <span></span>
+      <article>
+        <p class="overline">Distraction free communication with E-mories</p>
+        <h1>Meaningful conversations between friends and family.</h1>
+      </article>
+      <div>
+        <button onclick="scrollToSection('#prototype-page')">Show me E-mories</button>
+      </div>
+    </section>
+
+    <section>
+      <span></span>
+      <article>
+        <p class="overline">Makings of a design artefact</p>
+        <h1>Behind the scenes - designing E-mories</h1>
+      </article>
+      <div>
+        <button onclick="scrollToSection('#process-page')">Our process</button>
+      </div>
+    </section>
+
+    <section>
+      <span></span>
+      <article>
+        <p class="overline">Reflecting on the outcome</p>
+        <h1>Comparing the ideal to the actual</h1>
+      </article>
+      <div>
+        <button onclick="scrollToSection('#outcome-reflection-page')">Project Reflection</button>
+      </div>
+    </section>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- PROTOTYPE PAGE -->
+    <section class="page" id="prototype-page">
+      <section>
+        <div class="videoWrapper">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube-nocookie.com/embed/gajxLtZt5FA" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <article>
+          <section class="article-header">
+            <h2>Introducing E-mories</h2>
+            <img 
+              src="./images/social/GitHub-Mark-64px.png" 
+              alt="GitHub"
+              onclick="window.open('https://github.com/Sigurdssorensen/Emotional-Support-kangaroo', '_blank', 'noopener')">
+          </section>
+          <section class="article-body">
+            <p>
+              E-mories is a distraction free and personalised communication platform that allows you to keep 
+              in touch with close friends and family when unable to meet in person. As a decoration for your 
+              home, the sphere illuminates your room in soothing colours when a close friend or family member 
+              sends you a message.
+            </p>
+            <blockquote>E-mories' mantra is to share positive emotions with close-ones
+              remotely.
+            </blockquote>
+            <h3>Brief</h3>
+            <p>
+              Our team was tasked to conceptualise and build a novel physical interaction, with or through 
+              technology, that should be designed for playful and open-ended interactions in everyday life.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <article class="article-body">
+          <h3 class="no-margin-top">Team Supparoo</h3>
+          <ul class="team">
+            <li 
+              class="img-on-left"
+              onclick="window.open('https://github.com/s4540545', '_blank', 'noopener')">
+                Marie Thoresen
+            </li>
+            <li 
+              class="img-on-left"
+              onclick="window.open('https://github.com/ThomasVSaly', '_blank', 'noopener')">
+                Thomas Vincent Saly
+            </li>
+            <li 
+              class="img-on-left"
+              onclick="window.open('https://github.com/Sigurdssorensen', '_blank', 'noopener'">
+                Sigurd Sæther Sørensen
+            </li>
+            <li 
+              class="img-on-left"
+              onclick="window.open('https://github.com/Tuvao', '_blank', 'noopener')">
+                Tuva Ødegård
+            </li>
+          </ul>
+          <h3>Domain</h3>
+          <p>
+            In the early stages of the
+            <span 
+              class="inline-link"
+              onclick="scrollToSection('#process-page')">
+              design process,
+            </span>
+            we chose to explore the domain Emotional Intelligence. In short, Emotional Intelligence
+            is our ability to recognise emotions, know how to act in social settings, empathise and 
+            self-motivate
+            <span
+              class="reference"
+              onclick="window.open('https://psychcentral.com/lib/what-is-emotional-intelligence-eq/', '_blank', 'noopener')">
+              [1]
+            </span>
+            .
+          </p>
+          <h3>Research Question</h3>
+          <p>
+            After having conducted background research and initial user interviews, we devised the 
+            following research question:
+          </p>
+            <blockquote>
+              "How can we encourage others to share positive emotions with close ones remotely?"
+            </blockquote>
+        </article>
+      </section>
+
+      <section>
+        <article class="article-body">
+          <h3 class="no-margin-top">E-mories</h3>
+          <p>
+            In response to the brief and domain, we built a set of physical devices to facilitate personalised 
+            one-to-one asynchronous communication that would blend into your home. E-mories are provided in pairs, 
+            one for you and one for your close friend or family member.
+          </p>
+          <h3>How it Works</h3>
+          <p>
+            To send a message using E-mories you simply:
+          </p>
+          <ol>
+            <li><em>Squeeze</em> to record your message;</li>
+            <li><em>Rotate</em> to browse through colours; <span class="changes">(changed from shake)</span></li>
+            <li><em>Squeeze</em> to lock in the colour which best represent the mood of your message, and;</li>
+            <li><em>Throw</em> up in the air to send your message</li>
+          </ol>
+          <p>
+            After you've sent your message, your friend's E-mories will start to glow the colour you chose 
+            in step three. They can then proceed to listen to your message by squeezing their E-mories device.
+          </p>
+          <div 
+            class="continue"
+            onclick="scrollToSection('#prototype-page-two')">
+            <i class="material-icons">keyboard_arrow_down</i>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- PROTOTYPE PAGE TWO -->
+    <section class="page" id="prototype-page-two">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Intended Experience</h2>
+          </section>
+          <section class="article-body">
+            <img src="./images/Group Interaction Plan.jpg" alt="interaction plan">
+            <span class="reference">[2] Interaction Plan</span>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <h3>Experience</h3>
+            <p>
+              As shown in the interaction plan and explained through our mantra, E-mories intends to facilitate 
+              sharing positive emotions with close-ones remotely. When an E-mories ball lights up, it acts as a 
+              tangible representation of the sender and their mood, illuminating your home with soothing colours. 
+              Although users are free to use E-mories for whatever they like, it is our belief that a colour with 
+              happy connotations sent from a close friend will brighten people's day. Moreover, we believe that 
+              when receiving a negative colour, people will empathise and take care of each other, thus helping 
+              each other back to a positive state of mind. In handing the reins over to the user and giving 
+              people the agency to define their mood through colour, meaning that they entrust onto the receiver 
+              a sneak peek into their state of mind, which is to be decoded using their shared meaning of that colour.
+            </p>
+            <h3>Audience</h3>
+            <p>
+              For some, E-mories may provide a personal style of communication among two people, while others may 
+              want to use E-mories to convey meaningful messages to show close-ones how important they are to them. 
+              E-mories can offer a new and exciting medium for tech enthusiasts, or for those of us who feel like 
+              social media can be overwhelming, it can be a much needed decluttered and simplistic platform. 
+              E-mories isn't for one particular person or audience, but rather for people who share the situation 
+              of wanting a personal, meaningful and distraction free communication platform.
+            </p>
+            <div 
+              class="continue"
+              onclick="scrollToSection('#prototype-page-three')">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- PROTOTYPE PAGE THREE -->
+    <section class="page" id="prototype-page-three">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Individual Focus</h2>
+          </section>
+          <section class="article-body">
+            <p>
+              When building E-mories, we chose to explore each our aspect of the overall product to rapidly user test 
+              different features of the product. We then used the knowledge gained from these individual explorations 
+              to build one common solution. Although all prototypes currently have all functionality in common, we are 
+              still actively user testing different aspects of the overall concept and therefore have built slight 
+              variations of the same product to gather more usability data. The focus of my prototype exploration is to 
+              find a suitable method for notifying users of incoming messages, a suitable interaction for playing the 
+              incoming audio message, and whether E-mories can amplify a shared experience between people, even when 
+              shared remotely.
+            </p>
+            <p>
+
+            </p>
+            <img src="./images/intended-experience.jpeg" alt="intended experience">
+            <span class="reference">[3] Concept Drawing & Intended Experience</span>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <img src="./images/prototype-two-01.jpg" alt="prototype: ball glowing red">
+            <img src="./images/prototype-two-03.jpg" alt="prototype: ball glowing purple">
+            <p>
+              Our background research, initial interview and first prototype test led me to the current solution which utilises 
+              squeeze to listen to recordings, pulsating lights to display notifications and haptic feedback to emphasise when 
+              a user interacts with the E-mories device. Moreover, for this prototype, I have used a transparent rubber ball 
+              filled with glitter water to explore a suitable material for E-mories and how to make the device a personal 
+              artefact for the user,by providing a
+            </p>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <p>
+                 
+              touch of personalisation to the E-mories device.
+            </p>
+            <h3>What's Working & What's Simulated?</h3>
+            <p>
+              All audio playback for my prototype and recording for Thomas’ prototype had to be simulated due to one piece of 
+              hardware we found to be faulty, meaning that we can't play or record audio messages from within the ball. Although
+              audio is a core feature of the prototype, we will still be able to gather the data we need by simulating audio. 
+              The features we have working are the squeeze interaction to record and listen to messages, a notification system 
+              for incoming messages, a colour picking system, and sending and receiving data to the other E-mories devices in our team
+              through a server.
+            </p>
+            <div 
+              class="continue"
+              onclick="scrollToSection('#process-page')">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- PROCESS PAGE -->
+    <section class="page" id="process-page">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Our Process</h2>
+          </section>
+          <section class="article-body">
+            <p>
+              Prior to forming a team, the entire class worked collaboratively to establish 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/week-2-theme-generation-5e6719ec5603b', '_blank', 'noopener')">
+                domains
+              </span>
+              using methods such as
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/week-3-world-cafe-5e671d0f23de8/', '_blank', 'noopener')">
+                World Café,
+              </span>
+              from a set of initial concepts that was presented in class. One domain that emerged was from this exercise 
+              was Emotional Intelligence, which our team formed around. As an initial concept, we came up with the idea
+              <span 
+                class="inline-link"
+                onclick="window.open('https://youtu.be/bnUceLbmCUI', '_blank', 'noopener')">
+                Emotional Birds,
+              </span>
+              a game revolved around in-the-moment emotions. Emotional Birds would let users choose a ball to throw 
+              representing a specific emotion and then try to hit a target. The combined data from velocity and colour 
+              of the ball would drip a similar coloured drop of water into an oil tank which would represent that user's 
+              in-the-moment emotion for all bystanders to see. Based on 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/week-4-pivot-and-idea-refinement-5e82cad9c73e7', '_blank', 'noopener')">
+                feedback
+              </span>
+              we received, it became apparent that Emotional Birds did not fully meet the brief of being an everyday activity. 
+              Some of the feedback we received at this stage is part of the final prototype as presented on this website. 
+              These are, to let users make their own mixture of emotions, combined from clay or colours, move the concept 
+              into the home to meet the everyday aspect of the brief, and to combine senses such as exploring shape, material 
+              and colour together. We decided to pivot our project and instead came up with a cylinder containing one ball 
+              per person in a household. This cylinder would track the household’s emotions throughout the day and act as 
+              a mediator to talk about emotions in the home. However, we still had to out how to make the concept more interactive.
+            </p>
+            <p>
+              To better understand our concept and potential users, we conducted an interview with young adults to understand their 
+              emotional sharing habits. Our 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/week-5-post-2-user-interviews-and-concept-proposal-5e8addd9f31fc', '_blank', 'noopener')">
+                findings
+              </span>
+              showed that people were uncomfortable talking about their emotions and that they mostly talked about emotions with 
+              those closest to them.
+            </p>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <p>
+              Another interesting finding was that people did not intentionally sit down to talk about their positive emotions either. 
+              This sparked the idea of focusing on sharing positive emotions to get meaningful conversations going. After looking more 
+              closely at what we wanted users to leave with after having used our concept, we ended up focusing on <em>lifting the spirit 
+                in the home</em>. This goal was further refined to <em>encourage positive emotional sharing with close-ones remotely</em>, 
+                which is when the concept of 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://drive.google.com/drive/folders/1ZKv8h9r98Bvlkw7q9M-Ia4Yj9mWBKuqo?usp=sharing', '_blank', 'noopener')">
+                E-mories emerged.
+              </span>
+            </p>
+            <p>
+              At this stage we started to work on our individual explorations while at the same time developing the overall concept 
+              together. As for my exploration, I drew upon the work of Boothby, Clark and Bargh to explore whether E-mories could 
+              provide a personal enough connection for people to share emotions and whether sharing an experience from remote could 
+              enhance the experience for those sharing in it
+              <span
+                class="reference"
+                onclick="window.open('https://journals.sagepub.com/doi/10.1177/0956797614551162', '_blank', 'noopener')">
+                [4]
+              </span>
+              . Moreover, I set out to explore a suitable interaction for listening to recordings and a suitable notification system. 
+              From the initial interview and our background research, we had already decided to start off with prototyping squeeze as 
+              an interaction for recording and listening to audio, shake to determine colour and throwing to send data. Moreover, we 
+              had decided to prototype colours as a notification of incoming messages and implement a microphone and speaker for audio 
+              recording and playback. When building the 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/midsem-week-7-post-1-prototyping-5ea4cc5fc3703/', '_blank', 'noopener')">
+                first prototype,
+              </span>
+              it turned out that we had some faulty hardware, thus making it difficult to implement audio into the ball itself, which 
+              is the reason audio is simulated. Findings from user tests indicated that the E-mories, in its current form, do not 
+              enhance a remotely shared experience, material needs to be explored, and colours are perceived differently from person 
+              to person, although there are some similarities. The squeeze interaction and notification lights were generally well 
+              received except for some minor fine tuning required for the next prototype.
+            </p>
+            <div 
+             class="continue"
+             onclick="scrollToSection('#process-page-two')">
+             <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- PROCESS PAGE TWO -->
+    <section class="page" id="process-page-two">
+      <section>
+        <article>
+          <section class="article-body">
+            <p>
+              From these findings one question emerged, 
+              what makes this different to use than a phone? When presenting
+              <span 
+                class="inline-link"
+                onclick="window.open('https://youtu.be/gajxLtZt5FA', '_blank', 'noopener')">
+                our concept
+              </span>
+              to the class, we used the opportunity to ask questions, such as the previously mentioned question, to explore other 
+              people’s perspectives. The 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://deco3850.uqcloud.net/blogs/week-11-working-on-the-next-prototype-5eccc404dff1f/', '_blank', 'noopener')">
+                feedback
+              </span>
+              we received on the presentation, mostly correlated with our user test findings from before. As with the user test 
+              findings, here too our feedback suggested that we should explore material in addition to looking at how we could 
+              make E-mories more of a personal artefact. Moreover, one team suggested that we should focus on one-to-one 
+              communication instead of small groups of devices connected.
+            </p>
+            <p>
+              For the second prototype, I listened to the feedback we had received and focused on exploring a suitable material 
+              for E-mories. Wanting to test both form and material at the same time, I tried to create a semi-translucent cube 
+              out of silicone, but when the mixture still hadn’t dried after several days, I started over from scratch. For the 
+              next attempt I chose to use a rubber ball from K-mart. This ball had an interesting pattern to it and contained 
+              glitter water inside which I thought could make for a neat effect if light illuminated it in the correct way, 
+              which I could user test to see if it makes E-mories more of a personal artefact than the previous prototype.
+            </p>
+            <h2>WRITE MORE ABOUT RESULTS HERE</h2>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <div 
+              class="continue"
+              onclick="scrollToSection('#ideal-product-page')">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- IDEAL PRODUCT PAGE -->
+    <section class="page" id="ideal-product-page">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Ideal Product</h2>
+          </section>
+          <section class="article-body">
+            <p>
+              E-mories is inspired by the memory spheres in the 2015 Pixar movie 
+              <span 
+                class="inline-link"
+                onclick="window.open('https://www.imdb.com/title/tt2096673/', '_blank', 'noopener')">
+                Inside Out.
+              </span>
+              Ideally, E-mories would make use of several mediums and senses to form a combined memory from various sources. 
+              These data sources could be a combination of smells, images, movie clips, touch and more, as together, they 
+              would play to several different human senses. An interesting technology to implement would be electro tactile 
+              feedback to allow users to feel various materials when touching the E-mories device, such as the fur of your 
+              dog while replaying a happy memory of your pet. Additionally, my ideal solution would also allow for E-mories 
+              devices to replay old memories and build upon them with new memories, either from friends reflecting on their 
+              memories together or when one of them is visiting the same place again. Moreover, I would like to see a 
+              functionality which encourages users to interact with old memories as they slowly fade over time if not 
+              interacted with, and for people to store memories that are important to them, to be revisited at any time. 
+              However, given that we are not designing for ourselves, the ideal product may look entirely different to our 
+              users than what an ideal product looks like to its designers. So far in our process, we haven't uncovered any 
+              ideal solution from the users’ perspective in our findings. Although, users are, for the most part, happy with 
+              how the device have turned out so far.
+            </p>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <img src="https://thumbs.gfycat.com/MintyBlackHerring-size_restricted.gif" alt="GIF showing interaction with a memory in Inside Out">
+            <span
+            class="reference"
+            onclick="window.open('https://thumbs.gfycat.com/MintyBlackHerring-size_restricted.gif', '_blank', 'noopener')">
+            [5] "Riley's Memories" Clip - Inside Out GIF
+          </span>
+            <div 
+              class="continue"
+              onclick="scrollToSection('#technical-details-page')">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- TECHNICAL DETAILS PAGE -->
+    <section class="page" id="technical-details-page">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Technical Details</h2>
+          </section>
+          <section class="article-body">
+            <p>
+              E-mories is built using an Arduino Uno connected over serial to a local JavaScript client which in turn connects 
+              via a web socket to a Node.js server.
+            </p>
+            <img src="./images/technical.png" alt="Image showing the five steps included in sending a message">
+            <p>
+              This server’s job is to retrieve messages when they have been sent from one computer and to forward the message 
+              to the correct receiver. The server is a standard node.js server using the express framework and socket.io library.
+            </p>
+            <p>
+              The client is the layer that ties the server and Arduino together. It’s a locally run JavaScript file that retrieves 
+              and sends data over the serial port to and from the Arduino in addition to sending and retrieving data from a web 
+              socket connection to the server.
+            </p>
+            <p>
+              An Arduino is set up to control the E-mories ball and all of its sensors. Inside of the ball, there is a MPU6050 
+              Accelerometer using the MPU6050_tockn library,a NeoPixel strip using Adafruit_NeoPixel library, a bend sensor and 
+              a haptic vibration motor. We use the accelerometer when choosing a colour to accompany the message and to throw the 
+              ball in the air to send the message, as these movements require us to observe
+            </p>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <p>
+              the ball’s rotation and acceleration. To display notifications, show visual feedback when recording and picking a colour, 
+              we use the LED strip to display coloured lights. The bend sensor is what allows us to sense when a user squeezes the ball, 
+              and the haptic vibration motor lets us use vibration as feedback to let users know when something is happening.
+            </p>
+            <p>
+              A typical sequence would be that a user records a message using the E-mories ball using the bend sensor to indicate to the 
+              system that he or she wishes to record a message. When done recording the user presses the bend sensor a second time to let 
+              the system know that it has been completed. Next, the user will pick a colour by tilting and rotating the accelerometer, 
+              before they again press the bend sensor to let the system know they have picked a colour. Lastly, he or she throws the ball 
+              in the air, again using the accelerometer which indicates to the system that the message should be sent. The Arduino sends 
+              the message and colour over to the JavaScript file on the computer through the serial
+            </p>
+          </section>
+        </article>
+      </section>
+      <section>
+        <article>
+          <section class="article-body">
+            <p>
+              port (USB). The JavaScript file forwards the data to the server via a web socket connection where it’s final destination will 
+              be determined and sent off to. The server then sends the data to the receiving computer over a similar web socket connection 
+              which is caught by an identical JavaScript file as to the first computer. When receiving information from the server, this 
+              file forwards it to another Arduino connected to its serial port. The Arduino then uses the LED strip to indicate that an 
+              incoming message has been received. 
+            </p>
+            <h3>Form</h3>
+            <p>
+              All team members have built their E-mories ball slightly different as we are still testing various aspects of the overall concept. 
+              My ball is built using a transparent rubber ball filled with all previously mentioned Arduino sensors covered in silicone and then 
+              filled with glitter water. The glitter water is intended to, in combination with the LED light, create interesting reflections 
+              which is one way of making the device more of a personal artefact for some users.
+            </p>
+            <div 
+              class="continue"
+              onclick="scrollToSection('#outcome-reflection-page')">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </article>
+      </section>
+
+    </section>
+
+    <!-- OUTCOME REFLECTION PAGE -->
+    <section class="page" id="outcome-reflection-page">
+      <section>
+        <article>
+          <section class="article-header">
+            <h2>Outcome Reflection</h2>
+          </section>
+          <section class="article-body">
+            <p>
+              The obvious challenge of the ideal product, being similar to the memories of the movie Inside Out, is its complexity. Where the final 
+              prototype display emotions using lights, uses haptic feedback to enhance the feeling of interacting with the ball and relies on audio 
+              as its medium, memories from Inside Out have a far more complex combination of mediums to convey meaningful memories. One point of 
+              having an ideal product is to have a goal that is just out of reach to strive for. Although the state of E-mories is far from its ideal 
+              self, we have successfully been able to user test a subset of the ideal product and found it to be a useful path to pursue. There is no 
+              doubt that implementing more mediums than audio alone would drastically alter the product and how users could interact with it and what 
+              it could be used for. Therefore, to fully explore the ideal product, where its value lies and whether it would serve as a meaningful 
+              alternative to existing solutions, a more comprehensive prototype ought to be built. The desired outcome of the project has changed 
+              several times throughout the design process and due to restricted user testing conditions, we had to be flexible in terms of choosing 
+              what aspects to test that would provide us with the most valuable data. Where our team has been successful in combining all our 
+              prototypes to one, thus allowing us to communicate remotely with our E-mories devices, and found promising data, other goals were more 
+              difficult to reach, such as testing the effects of haptic feedback and feel of materials.
+            </p>
+          </section>
+        </article>
+      </section>
+
+    </section>
+  </main>
+
+</body>
+</html>
