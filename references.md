@@ -12,7 +12,8 @@
 [3] T. Oedegaard. "Concept Drawing & Intended Experience".
 [4] E. J. Boothby, M. S. Clark, and J. A. Bargh, “Shared Experiences Are    
     Amplified,” Psychol Sci, vol. 25, no. 12, pp. 2209–2216, Dec. 2014, doi: 10.1177/0956797614551162 (accessed June. 01, 2020).
-[5] gfycat. "Riley's Memories Clip - Inside Out GIF" gfycat.com
+[5] T. Oedegaard. "Interaction Flow".
+[6] gfycat. "Riley's Memories Clip - Inside Out GIF" gfycat.com
     https://gfycat.com/fr/mintyblackherring (accessed June. 01, 2020).
 
 # Icons
