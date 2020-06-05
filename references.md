@@ -1,3 +1,9 @@
+# HTML
+[1] S. Matteson. "Open Sans" Google fonts.google.com
+    https://fonts.google.com/specimen/Open+Sans
+[2] Google. "Material Icons Guide" google.github.io
+    https://google.github.io/material-design-icons/
+
 # CSS
 [1] C. Coyier. "Fluid Width Video." css-tricks.com 
     https://css-tricks.com/fluid-width-video/ (accessed May. 22, 2020).
